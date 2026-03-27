@@ -41,4 +41,18 @@ body{
     grid-template-areas: 
         "main main main main"
         "pro web cs slaap";
+    
+    display:grid;
+}
+
+.main{
+    grid-area: main;
+
+    background: linear-gradient(to bottom, #02577A, #01303F);
+
+    width:80%;
+    border-radius: 16px;
+    margin:auto;
+    margin-top: 20px;
+    text-align: center;
 }
