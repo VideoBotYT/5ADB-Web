@@ -1,17 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
 *{
     margin:0;
     padding:0;
     box-sizing: border-box;
 }
 
+body{
+    background-color: #02577A;
+    font-family: "Roboto Condensed";
+}
+
 .topbar{
     background: linear-gradient(to left, #02A9F7, #89D6FB, #02A9F7, #89D6FB);
     width: 80%;
-    height: 10%;
+    /* height: 10%; */
     margin: auto;
     margin-top: 10px;
+
+    text-align: center;
+    padding:1.5%;
+
+    border-radius: 16px;
+    box-shadow: rgba(0, 0, 0, 0.6) 8px 10px 4px;
 }
-.topbar a{
+.button{
+    text-decoration: none;
+    color:white;
     margin:auto;
     margin: 5%;
+    padding:8px;
+    border-radius: 8px;
+
+    font-size: 1.5rem;
+
+    background: linear-gradient(to bottom, #00FFE1, #D4F0FC);
 }
