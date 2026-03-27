@@ -3,3 +3,15 @@
     padding:0;
     box-sizing: border-box;
 }
+
+.topbar{
+    background: linear-gradient(to left, #02A9F7, #89D6FB, #02A9F7, #89D6FB);
+    width: 80%;
+    height: 10%;
+    margin: auto;
+    margin-top: 10px;
+}
+.topbar a{
+    margin:auto;
+    margin: 5%;
+}
