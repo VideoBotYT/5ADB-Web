@@ -5,14 +5,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="main.css">
         <link rel="icon" href="images/Logo-ADB.jpg"type="images/x-icon">
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
         <title>Inschrijvingsformulier</title>
     </head>
     <body>
-        <header> <div class="topbar">
-            <a class="button" href="index.html">Home</a>
-            <a class="button" href="lessenrooster.html">Lessen</a>
-            <a class="button" href="index.html">Computer</a>
-            <a class="button" href="Inschrijving.html">Inschrijvingen</a>
+        <header> 
+            <div class="topbar">
+                <a class="button" href="index.html"><span class="material-symbols-outlined">home</span> Home</a>
+                <a class="button" href="lessenrooster.html"><span class="material-symbols-outlined">book_2</span> Lessen</a>
+                <a class="button" href="computervakken.html"><span class="material-symbols-outlined">computer</span> Computer</a>
+                <a class="button" href="Inschrijving.html"><span class="material-symbols-outlined">ink_pen</span> Inschrijvingen</a>
+            </div>
         </header>
         <div class="Form"> 
             <form 
@@ -41,9 +44,29 @@
                     placeholder="Achternaam"
                     autocomplete="on"
                     required
-                    autofocus
                     />
                 </p>
+                <p>
+                    <label for="Leeftijd">Leeftijd leerling :</label>
+                    <input
+                    type="number"
+                    name="Leeftijd"
+                    id="Leeftijd"
+                    placeholder="Leeftijd"
+                    autocomplete="on"
+                    required
+                    />
+                </p>
+                <fieldset>
+                    <legend>Hoeveelste middelbaar: </legend>
+                    <label for="Jaar">Jaar</label>
+                    <select name="Jaar" id="Jaar">
+                        <optgroup label="Jaar">
+                            <option value="5de">5de</option>
+                            <option value="6de">6de</option>
+                        </optgroup>
+                    </select>
+                </fieldset>
             </form>
         </div>
     </body>

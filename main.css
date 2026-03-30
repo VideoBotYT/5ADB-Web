@@ -7,12 +7,12 @@
 }
 
 body{
-    background-color: #02577A;
+    background-color: #090166a9;
     font-family: "Roboto Condensed";
 }
 
 .topbar{
-    background: linear-gradient(to left, #02A9F7, #89D6FB, #02A9F7, #89D6FB);
+    background: rgba(0, 0, 0, 1);
     width: 80%;
     /* height: 10%; */
     margin: auto;
@@ -34,7 +34,7 @@ body{
 
     font-size: 1.5rem;
 
-    background: linear-gradient(to bottom, #00FFE1, #D4F0FC);
+    
 }
 
 .maingrid{
@@ -48,13 +48,22 @@ body{
 .main{
     grid-area: main;
 
-    background: linear-gradient(to bottom, #02577A, #01303F);
-
-    max-width:80%;
+    /* background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #01303F); */
+    
+    /* backdrop-filter: blur(10px); */
+    /* max-width:80%; */
+    height:100%;
     border-radius: 16px;
     margin:auto;
     margin-top: 20px;
     text-align: center;
+    
+}
+.main h1{
+    position: relative;
+    color:white;
+    z-index: 1;
+    justify-content: center;
 }
 main {
     display: flex;
@@ -63,19 +72,20 @@ main {
     margin-top: 50px;
 }
 .bg{
-    position: relative;
+    /* position: relative; */
     width: 100%;
-    overflow: hidden;
-    height:200px;
+    /* overflow: hidden; */
+    height:100%;
 }
 .bg iframe{
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 177.77vh;
-    height: 350px;
+    width: 100%;
+    height: 100%;
     transform: translate(-50%, -50%);
     pointer-events: none;
+    z-index:-99999;
 }
 
 
@@ -106,15 +116,40 @@ main {
 .Computergerichtevakken 
 {
 border-radius: 15px;
-border: solid;
+border: solid 1rem white;
 padding: 1.5rem;
 margin: 1.5rem;
+}
+.computervakken p
+{
 }
 .Applicatiebeheer
 {
 border-radius: 15px;
 border: solid white;
-background: linear-gradient(to bottom, #00FFE1, #D4F0FC);
+padding: 1.5rem;
+margin: 0.5rem;
+}
+.computersystemen
+{
+border-radius: 15px;
+border: solid white;
+padding: 1.5rem;
+margin: 0.5rem;   
+}
+.programmeren
+{
+border-radius: 15px;
+border: solid white;
+padding: 1.5rem;
+margin: 0.5rem; 
+}
+.Webdesign
+{
+border-radius: 15px;
+border: solid white;
+padding: 1.5rem;
+margin: 0.5rem; 
 }
 .Form {
     background-color: white;
@@ -125,5 +160,11 @@ background: linear-gradient(to bottom, #00FFE1, #D4F0FC);
     padding: 2%;
 }
 .Form p {
-    margin-bottom: 2%;
+    margin-bottom: 5%;
+}
+select {
+    margin: 2%;
+}
+optgroup {
+    margin-left: 2%;
 }
