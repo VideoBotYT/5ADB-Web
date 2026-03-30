@@ -8,6 +8,43 @@
         <title>Inschrijvingsformulier</title>
     </head>
     <body>
-        
+        <header> <div class="topbar">
+            <a class="button" href="index.html">Home</a>
+            <a class="button" href="lessenrooster.html">Lessen</a>
+            <a class="button" href="index.html">Computer</a>
+            <a class="button" href="Inschrijving.html">Inschrijvingen</a>
+        </header>
+        <div class="Form"> 
+            <form 
+            action="https://httpbin.org/post"
+            method="post"
+            enctype="multipart/form-data"
+            >
+                <p>
+                    <label for="Voornaam">Voornaam leerling :</label>
+                    <input
+                    type="text"
+                    name="NaamLeerling"
+                    id="NaamLeerling"
+                    placeholder="Voornaam"
+                    autocomplete="on"
+                    required
+                    autofocus
+                    />
+                </p>
+                <p>
+                    <label for="Achternaam">Achternaam leerling :</label>
+                    <input
+                    type="text"
+                    name="AchterNaamLeerling"
+                    id="AchterNaamLeerling"
+                    placeholder="Achternaam"
+                    autocomplete="on"
+                    required
+                    autofocus
+                    />
+                </p>
+            </form>
+        </div>
     </body>
 </html>

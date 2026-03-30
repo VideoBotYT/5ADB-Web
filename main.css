@@ -50,9 +50,80 @@ body{
 
     background: linear-gradient(to bottom, #02577A, #01303F);
 
-    width:80%;
+    max-width:80%;
     border-radius: 16px;
     margin:auto;
     margin-top: 20px;
     text-align: center;
+}
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 50px;
+}
+.bg{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height:200px;
+}
+.bg iframe{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 177.77vh;
+    height: 350px;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+
+.lesinfo {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.219);
+    padding: 20px;
+    border-radius: 10px;
+    width: 40%;
+    text-align: center;
+    height: 200px;
+    margin-left: 50px;
+    margin-right: 0px;
+}
+.lesinfo2 {
+    border-radius: 10px;
+    color: white;
+    width: 40%;
+    height: 200px;
+    margin-left: 0px;
+    margin-right: 50p;
+}
+.lesrooster
+{
+    width: 100%;
+    height: 100%;
+}
+.Computergerichtevakken 
+{
+border-radius: 15px;
+border: solid;
+padding: 1.5rem;
+margin: 1.5rem;
+}
+.Applicatiebeheer
+{
+border-radius: 15px;
+border: solid white;
+background: linear-gradient(to bottom, #00FFE1, #D4F0FC);
+}
+.Form {
+    background-color: white;
+    border-radius: 12px;
+    width: 50%;
+    margin: auto;
+    margin-top: 5%;
+    padding: 2%;
+}
+.Form p {
+    margin-bottom: 2%;
 }
