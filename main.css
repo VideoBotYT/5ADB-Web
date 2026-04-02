@@ -7,12 +7,34 @@
 }
 
 body{
-    background-color: #090166a9;
+    background-color: #090233;
     font-family: "Roboto Condensed";
 }
 
+table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 90%;
+}
+
+th, td {
+    border: 1px solid #333;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #2c3e50;
+    color: white;
+}
+
+td {
+    background-color: #ecf0f1;
+}
+
+        
 .topbar{
-    background: rgba(0, 0, 0, 1);
+    background: rgba(0, 0, 0, 0.5);
     width: 80%;
     /* height: 10%; */
     margin: auto;
@@ -40,9 +62,25 @@ body{
 .maingrid{
     grid-template-areas: 
         "main main main main"
-        "pro web cs slaap";
+        "pro web cs slaap"; 
     
     display:grid;
+
+    grid-template-rows: 2fr 5fr;
+
+    padding:2%;
+    padding-bottom:10%;
+    border-radius: 16px;
+
+    width:80%;
+    margin:auto;
+    margin-top:2%;
+
+    gap: 10px;
+    row-gap: 20px;
+
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: rgba(0, 0, 0, 0.6) 10px 10px 10px;
 }
 
 .main{
@@ -88,40 +126,156 @@ main {
     z-index:-99999;
 }
 
+.pro, .cs, .web, .applicatiebeheer{
+    display:grid;
+    /* text-align: center; */
+    font-weight: bold;
+    font-size: 1.2rem;
 
+    background-color: rgba(0, 0, 0, 0);
+
+    justify-content: center;
+    
+    width:80%;
+
+    border-radius: 8px;
+}
+.pro a, .cs a, .web a, .applicatiebeheer a{
+    /* text-decoration: none; */
+
+    margin:auto;
+    color:white;
+} 
+
+
+.pro{
+    grid-area: pro;
+    background-image: url("images/cybercrime.jpg");
+}
+
+.cs{
+    grid-area: cs;
+    background-image: url("images/touchdashish.jpg");
+}
+
+.web{
+    grid-area: web;
+    background-image: url("images/AI\ Image.png"); 
+}
+
+.applicatiebeheer{
+    grid-area: slaap;
+    background-image: url("images/app.jpg");
+}
+
+.footy{
+    margin-top:100vh;
+    /* grid-area: foot;
+    display: grid; */
+}
+
+.tabelles
+{
+    display: block;
+    background-color: #c3a20e;
+    margin: 150px;
+}
+.lesseninfo
+{
+    display: block;
+   background-color: rgba(104, 3, 3, 0.6);
+   box-shadow: rgba(0, 0, 0, 0.6) 10px 10px 10px;
+    margin: 20px;
+    width: 100%;
+    border-radius: 16px;
+}
 .lesinfo {
     color: white;
     background-color: rgba(0, 0, 0, 0.219);
-    padding: 20px;
     border-radius: 10px;
-    width: 40%;
     text-align: center;
     height: 200px;
-    margin-left: 50px;
-    margin-right: 0px;
+    display: inline-block;
+    width: 50%;
+    
 }
 .lesinfo2 {
     border-radius: 10px;
     color: white;
     width: 40%;
-    height: 200px;
-    margin-left: 0px;
-    margin-right: 50p;
+    height: 100%;
+    display: inline-block;
+    padding: 20px;
 }
 .lesrooster
 {
     width: 100%;
     height: 100%;
+    border-radius: 10px;
+}
+.lessen
+{
+    display: block;
+    background-color: #980000;
 }
 .Computergerichtevakken 
 {
+color: white;
 border-radius: 15px;
 border: solid 1rem white;
 padding: 1.5rem;
 margin: 1.5rem;
 }
-.computervakken p
+.FotoApplicatiebeheer
 {
+display: inline-block;
+    border-radius: 15px;
+    border: solid white;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+margin: 1.5rem;
+}
+.Fotocomputersystemen
+{
+    display: inline-block;
+    border-radius: 15px;
+    border: solid white;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+margin: 1.5rem;
+}
+.Fotowebdesign
+{
+   display: inline-block;
+    border-radius: 15px;
+    border: solid white;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+margin: 1.5rem; 
+}
+.Fotoprogrammeren
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border: solid white;
+    border-radius: 15px;
+    height: 100%;
+    width: 100%;
+
+}
+.Fotoprogrammeren img {
+    flex-shrink: 1;
+    width: 10%;
+    height: 50%;
+    object-fit: cover;
 }
 .Applicatiebeheer
 {
@@ -152,11 +306,12 @@ padding: 1.5rem;
 margin: 0.5rem; 
 }
 .Form {
-    background-color: white;
+    background-color: rgb(79, 97, 136);
     border-radius: 12px;
     width: 50%;
     margin: auto;
     margin-top: 5%;
+    margin-bottom: 5%;
     padding: 2%;
 }
 .Form p {
@@ -165,6 +320,49 @@ margin: 0.5rem;
 select {
     margin: 2%;
 }
-optgroup {
-    margin-left: 2%;
+fieldset {
+    padding-left: 2%;
+    margin-bottom: 5%;
+    border-radius: 12px;
+}
+.submit {
+    border: none;
+    background-color: #00aa00;
+    color: white;
+    padding: 2%;
+    border-radius: 12px;
+}
+.reset {
+    border: none;
+    background-color: #980000;
+    color: white;
+    padding: 2%;
+    border-radius: 12px;
+}
+textarea {
+    width: 98%;
+    border-radius: 12px;
+}
+input {
+    border-radius: 8px;
+    border: 1px solid;
+    padding: 1%;
+}
+label {
+    color: white;
+}
+legend {
+    color: white;
+}
+.titelformulier {
+    color: white;
+    text-align: center;
+    margin-top: 2%;
+}
+footer
+{
+    background-color: white;
+    text-align: center;
+    padding: 1.5rem;
+    margin-bottom: 0;
 }

@@ -14,9 +14,10 @@
                 <a class="button" href="index.html"><span class="material-symbols-outlined">home</span> Home</a>
                 <a class="button" href="lessenrooster.html"><span class="material-symbols-outlined">book_2</span> Lessen</a>
                 <a class="button" href="computervakken.html"><span class="material-symbols-outlined">computer</span> Computer</a>
-                <a class="button" href="Inschrijving.html"><span class="material-symbols-outlined">ink_pen</span> Inschrijvingen</a>
+                <a class="button" href="Inschrijving.html"><span class="material-symbols-outlined">ink_pen</span> Inschrijven</a>
             </div>
         </header>
+        <h1 class="titelformulier">Inschrijvingsformulier ADB</h1>
         <div class="Form"> 
             <form 
             action="https://httpbin.org/post"
@@ -67,7 +68,109 @@
                         </optgroup>
                     </select>
                 </fieldset>
+                <p>
+                    <label for="Richting">Vorige richting :</label>
+                    <input
+                    type="text"
+                    name="Richting"
+                    id="Richting"
+                    placeholder="Vorige richting"
+                    autocomplete="on"
+                    required
+                    />
+                </p>
+                <p>
+                    <label for="school">Vorige school :</label>
+                    <input
+                    type="text"
+                    name="school"
+                    id="school"
+                    placeholder="Vorige school"
+                    autocomplete="on"
+                    required
+                    />
+                </p>
+                <p>
+                    <label for="Adres">Adres leerling :</label>
+                    <input
+                    type="text"
+                    name="Adres"
+                    id="Adres"
+                    placeholder="Adres "
+                    />
+                </p>
+                <p>
+                    <label for="beperking">Eventuele beperkingen (indien geen, niets invullen):</label>
+                    <input
+                    type="text"
+                    name="beperking"
+                    id="beperking"
+                    placeholder="Beperking"
+                    autocomplete="on"
+                    />
+                </p>
+                <p>
+                    <label for="VoornaamOuder1">Voornaam ouder 1 :</label>
+                    <input
+                    type="text"
+                    name="VoornaamOuder1"
+                    id="VoornaamOuder1"
+                    placeholder="Voornaam ouder 1"
+                    autocomplete="on"
+                    required
+                    />
+                </p>
+                <p>
+                    <label for="AchternaamOuder1">Achternaam ouder 1 :</label>
+                    <input
+                    type="text"
+                    name="AchternaamOuder1"
+                    id="AchternaamOuder1"
+                    placeholder="Achternaam ouder 1"
+                    autocomplete="on"
+                    required
+                    />
+                </p>
+                <p>
+                    <label for="VoornaamOuder2">Voornaam ouder 2 :</label>
+                    <input
+                    type="text"
+                    name="VoornaamOuder2"
+                    id="VoornaamOuder2"
+                    placeholder="Voornaam ouder 2"
+                    autocomplete="on"
+                    />
+                </p>
+                <p>
+                    <label for="AchternaamOuder2">Achternaam ouder 2 :</label>
+                    <input
+                    type="text"
+                    name="AchternaamOuder2"
+                    id="AchternaamOuder2"
+                    placeholder="Achternaam ouder 2"
+                    autocomplete="on"
+                    />
+                </p>
+                <p>
+                    <label for="Telefoonnummer">Telefoonnummer ouders :</label>
+                    <input
+                    type="tel"
+                    name="Telefoonnummer"
+                    id="Telefoonnummer"
+                    placeholder="Tel: "
+                    />
+                </p>
+                <fieldset class="Info">
+                    <legend>Extra info : </legend>
+                    <textarea rows="10"> </textarea>
+                </fieldset>
+                <br>
+                <button class="submit" type="submit">Bevestigen</button>
+                <button class="reset" type="reset">Reset</button>
             </form>
         </div>
+        <footer>
+            <p>&copy;Microsite - 5ADB - 2026</p>
+        </footer>
     </body>
 </html>
