@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* reset */
 *{
     margin:0;
     padding:0;
@@ -7,7 +8,7 @@
 }
 
 body{
-    background-color: #090233;
+    background-color: #000000;
     font-family: "Roboto Condensed";
 }
 
@@ -32,7 +33,7 @@ td {
     background-color: #ecf0f1;
 }
 
-        
+/* topbar aanmaken */
 .topbar{
     background: rgba(0, 0, 0, 0.5);
     width: 80%;
@@ -46,7 +47,7 @@ td {
     border-radius: 16px;
     box-shadow: rgba(0, 0, 0, 0.2) 8px 10px 4px;
 }
-.button{
+.button{ /* design voor de knoppen */
     text-decoration: none;
     color:white;
     margin:auto;
@@ -58,7 +59,7 @@ td {
 
     
 }
-
+/* layout mainpage */
 .maingrid{
     grid-template-areas: 
         "main main main main"
@@ -114,13 +115,18 @@ main {
     width: 100%;
     /* overflow: hidden; */
     height:100%;
+
+    /* position: fixed; */
+    /* margin: auto; */
 }
 .bg iframe{
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
     width: 100%;
     height: 100%;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
     pointer-events: none;
     z-index:-99999;
@@ -169,7 +175,7 @@ main {
 }
 
 .footy{
-    margin-top:100vh;
+    margin-top:34.3vh;
     /* grid-area: foot;
     display: grid; */
 }
@@ -177,41 +183,40 @@ main {
 .tabelles
 {
     display: block;
-    background-color: #c3a20e;
-    margin: 150px;
+    background-color: #ffffff;
+    margin: 250px;
+    border-radius: 10px;
+    margin-top: 120px;
+    width: 80%;
 }
 .lesseninfo
 {
     display: block;
-   background-color: rgba(104, 3, 3, 0.6);
-   box-shadow: rgba(0, 0, 0, 0.6) 10px 10px 10px;
     margin: 20px;
     width: 100%;
     border-radius: 16px;
+    height: 100px;
+    text-align: center;
 }
 .lesinfo {
-    color: white;
-    background-color: rgba(0, 0, 0, 0.219);
+    color: rgb(246, 246, 246);
+    background-color: rgba(190, 190, 190, 0.491);
     border-radius: 10px;
     text-align: center;
     height: 200px;
     display: inline-block;
-    width: 50%;
-    
-}
-.lesinfo2 {
-    border-radius: 10px;
-    color: white;
-    width: 40%;
-    height: 100%;
-    display: inline-block;
-    padding: 20px;
+    width: 80%;
+    margin: 2rem;
+    padding-top: 2rem;
+    box-shadow: #000000 0px 10px 20px;
+    margin-left: 0px;
 }
 .lesrooster
 {
     width: 100%;
-    height: 100%;
+    height: 200px;
     border-radius: 10px;
+    vertical-align: center;
 }
 .lessen
 {
@@ -220,44 +225,75 @@ main {
 }
 .Computergerichtevakken 
 {
-color: white;
+box-shadow: rgba(0, 0, 0, 0.2) 8px 10px 4px;
+background-color: rgb(235, 234, 234);
+backdrop-filter: blur(20px);
+color: black;
 border-radius: 15px;
-border: solid 1rem white;
+border: solid 2px rgba(255, 255, 255, 0.55);
 padding: 1.5rem;
 margin: 1.5rem;
+width: 80%;
+margin-left: 128px;
+}
+#AchtergrondComputersystemen
+{
+    background-color: #908e8e;
+}
+.Computergerichtevakken h1
+{
+    text-align: center;
 }
 .FotoApplicatiebeheer
 {
-display: inline-block;
-    border-radius: 15px;
-    border: solid white;
     display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 1.5rem;
-margin: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border: solid black;
+    border-radius: 15px;
+    height: 100%;
+    width: 45%;
+    margin: auto;
+    margin-top: 2rem;
+}
+.FotoApplicatiebeheer2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border: solid black;
+    border-radius: 15px;
+    height: 100%;
+    width: 45%;
+    margin: auto;
+    margin-top: 2rem;
 }
 .Fotocomputersystemen
 {
-    display: inline-block;
-    border-radius: 15px;
-    border: solid white;
     display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 1.5rem;
-margin: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border: solid black;
+    border-radius: 15px;
+    height: 100%;
+    width: 45%;
+    margin: auto;
+    margin-top: 2rem;
 }
 .Fotowebdesign
 {
-   display: inline-block;
-    border-radius: 15px;
-    border: solid white;
     display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 1.5rem;
-margin: 1.5rem; 
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border: solid black;
+    border-radius: 15px;
+    height: 100%;
+    width: 45%;
+    margin: auto;
+    margin-top: 2rem;
 }
 .Fotoprogrammeren
 {
@@ -265,54 +301,76 @@ margin: 1.5rem;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    border: solid white;
+    border: solid black;
     border-radius: 15px;
     height: 100%;
-    width: 100%;
-
+    width: 45%;
+    margin: auto;
+    margin-top: 2rem;
 }
 .Fotoprogrammeren img {
     flex-shrink: 1;
-    width: 10%;
-    height: 50%;
+    width: 500px;
+    object-fit: cover;
+}
+.Fotocomputersystemen img {
+    flex-shrink: 1;
+    width: 500px;
+    object-fit: cover;
+}
+.Fotowebdesign img {
+    flex-shrink: 1;
+    width: 500px;
+    object-fit: cover;
+}
+.FotoApplicatiebeheer img {
+    flex-shrink: 1;
+    width: 500px;
+    object-fit: cover;
+}
+.FotoApplicatiebeheer2 img{
+    flex-shrink: 1;
+    width: 500px;
     object-fit: cover;
 }
 .Applicatiebeheer
 {
 border-radius: 15px;
-border: solid white;
+border: solid black;
 padding: 1.5rem;
 margin: 0.5rem;
 }
 .computersystemen
 {
 border-radius: 15px;
-border: solid white;
+border: solid black;
 padding: 1.5rem;
 margin: 0.5rem;   
 }
 .programmeren
 {
 border-radius: 15px;
-border: solid white;
+border: solid black;
 padding: 1.5rem;
 margin: 0.5rem; 
 }
 .Webdesign
 {
 border-radius: 15px;
-border: solid white;
+border: solid black;
 padding: 1.5rem;
 margin: 0.5rem; 
 }
 .Form {
-    background-color: rgb(79, 97, 136);
+    background-color: rgba(0, 0, 0, 0.114);
     border-radius: 12px;
     width: 50%;
     margin: auto;
     margin-top: 5%;
     margin-bottom: 5%;
     padding: 2%;
+
+    box-shadow: rgba(0, 0, 0, 0.6) 10px 10px 10px;
 }
 .Form p {
     margin-bottom: 5%;
@@ -361,8 +419,33 @@ legend {
 }
 footer
 {
-    background-color: white;
+    background-color: rgba(0, 0, 0, 0.5);
     text-align: center;
     padding: 1.5rem;
     margin-bottom: 0;
+    color: white;
+}
+.BackgroundForm {
+    background-color: rgb(101, 96, 158);
+}
+.lessenvakken {
+     background-color: #908e8e;
+}
+.voorbeeldles {
+    text-align: center;
+}
+.computer {
+    background-color: #908e8e;
+}
+.TabelForm {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+}
+.Uitleg {
+    color: white;
+    padding: 80px;
+        background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: rgba(0, 0, 0, 0.6) 10px 10px 10px;
+    width: 80%;
+    margin-left: 100px;
 }
