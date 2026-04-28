@@ -129,16 +129,18 @@ main {
 }
 
 .bg {
+    /* position: fixed; */
     /* position: relative; */
     width: 100%;
     /* overflow: hidden; */
     height: 100%;
 
+
     /* position: fixed; */
     /* margin: auto; */
 }
 
-.bg iframe {
+.bg video {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -182,22 +184,22 @@ main {
 
 .pro {
     grid-area: pro;
-    background-image: url("images/cybercrime.jpg");
+    background-image: url("assets/images/cybercrime.jpg");
 }
 
 .cs {
     grid-area: cs;
-    background-image: url("images/touchdashish.jpg");
+    background-image: url("assets/images/touchdashish.jpg");
 }
 
 .web {
     grid-area: web;
-    background-image: url("images/AI\ Image.png");
+    background-image: url("assets/images/AI\ Image.png");
 }
 
 .applicatiebeheer {
     grid-area: slaap;
-    background-image: url("images/app.jpg");
+    background-image: url("assets/images/app.jpg");
 }
 
 .footy {
