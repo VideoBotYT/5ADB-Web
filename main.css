@@ -59,8 +59,18 @@ td {
     border-radius: 8px;
 
     font-size: 1.5rem;
+}
 
-
+.hero{
+    background: url("assets/images/another\ held.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    /* margin: auto; */
+    background-position-y: 48%;
+    /* background-position-x: auto; */
+    text-align: center;
+    color:white;
 }
 
 /* layout mainpage */
@@ -74,7 +84,7 @@ td {
     grid-template-rows: 2fr 5fr;
 
     padding: 2%;
-    padding-bottom: 10%;
+    padding-bottom: 6%;
     border-radius: 16px;
 
     width: 80%;
@@ -116,9 +126,9 @@ td {
     box-shadow: rgba(0, 0, 0, 0.6) 10px 10px 10px;
     width: 80%;
     margin: auto;
-    margin-top: 1rem;
+    margin-top: 2rem;
 
-    border-radius: 8px;
+    border-radius: 16px;
 }
 
 main {
@@ -134,7 +144,6 @@ main {
     width: 100%;
     /* overflow: hidden; */
     height: 100%;
-
 
     /* position: fixed; */
     /* margin: auto; */
@@ -166,7 +175,11 @@ main {
 
     justify-content: center;
 
-    width: 80%;
+    width: 15rem;
+
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 
     border-radius: 8px;
 }
@@ -206,15 +219,6 @@ main {
     margin-top: 34.3vh;
     /* grid-area: foot;
     display: grid; */
-}
-
-.tabelles {
-    display: block;
-    background-color: #ffffff;
-    margin: 250px;
-    border-radius: 10px;
-    margin-top: 120px;
-    width: 80%;
 }
 
 .lesseninfo {
@@ -453,6 +457,7 @@ input {
 
 label {
     color: white;
+    text-align: left;
 }
 
 legend {
@@ -492,4 +497,31 @@ footer {
 .TabelForm {
     background-color: rgba(0, 0, 0, 0);
     border: none;
+}
+.basisvorming
+{
+    margin: 50px;
+}
+
+.table2
+{
+    margin: 20px;
+}
+.Form td {
+    text-align: center;
+    display: inline;
+}
+
+.tabeleke1
+{
+    display: inline;
+}
+.tabeleke2
+{
+    display: inline;
+}
+
+.hoofddingske
+{
+    background-color: rgba(4, 4, 61, 0.724);
 }
