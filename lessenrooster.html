@@ -1,38 +1,51 @@
 <!DOCTYPE html>
 <html lang="nl">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="main.css">
-        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
-        <link rel="icon" href="images/Logo-ADB.jpg" type="images/x-icon">
-        <title>Lessenrooster</title>
-    </head>
-    <body class="lessenvakken">
-        <header>
-            <div class="topbar">
-                <a class="button" href="index.html"><span class="material-symbols-outlined">home</span> Home</a>
-                <a class="button" href="lessenrooster.html"><span class="material-symbols-outlined">book_2</span> Uurrooster</a>
-                <a class="button" href="computervakken.html"><span class="material-symbols-outlined">computer</span> Vakken</a>
-                <a class="button" href="Inschrijving.html"><span class="material-symbols-outlined">ink_pen</span> Inschrijven</a>
-            </div>
-            <section class="lesseninfo">
-                <div class="lesinfo">
-                    <h1>5ADB & 6ADB</h1> <br>
-                    <p>Hier zie je de lesuren en <br>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="icon" href="images/Logo-ADB.jpg" type="images/x-icon">
+    <title>Lessenrooster</title>
+</head>
+
+<body>
+    <header>
+        <div class="topbar">
+            <a class="button" href="index.html"><span class="material-symbols-outlined">home</span> Home</a>
+            <a class="button" href="lessenrooster.html"><span class="material-symbols-outlined">book_2</span>
+                Uurrooster</a>
+            <a class="button" href="computervakken.html"><span class="material-symbols-outlined">computer</span>
+                Vakken</a>
+            <a class="button" href="Inschrijving.html"><span class="material-symbols-outlined">ink_pen</span>
+                Inschrijven</a>
+            <a class="button" href="watna.html"><span class="material-symbols-outlined">help</span> Wat Na?</a>
+        </div>
+        <section class="lesseninfo">
+            <div class="lesinfo">
+                <h1>5ADB & 6ADB</h1> <br>
+                <p>Hier zie je de lesuren en <br>
                     vakken die je gaat doen in deze <br>
                     richting.</p>
-                </div>
-                
-            </section>
-            <br>
-        </header>
-        
-        <main class="mainrooster">
-            <section class="basisvorming">
-                <div class="flexyTable">
+            </div>
+
+        </section>
+        <br>
+    </header>
+    <div class="main bg">
+        <video autoplay muted loop>
+            <source src="assets/video/BG.mp4">
+        </video>
+    </div>
+
+    <main class="mainrooster">
+        <section class="basisvorming">
+            <div class="flexyTable">
                 <table class="tabeleke1">
-                    <h1>5ADB</h1>
+                    <div class="headje">
+                        <h1>5ADB</h1>
+                    </div>
                     <tr>
                         <th class="hoofddingske">vakken</th>
                         <th class="hoofddingske">aantal uur</th>
@@ -74,12 +87,16 @@
                         <td>1</td>
                     </tr>
                     <tr>
+                        <td>economie</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
                         <th class="hoofddingske">hoofdvakken</th>
                         <th class="hoofddingske">aantal uur</th>
                     </tr>
                     <tr>
                         <td>Webdesign</td>
-                        <td>1</td>
+                        <td>4</td>
                     </tr>
                     <tr>
                         <td>Computersystemen en netwerken</td>
@@ -87,11 +104,11 @@
                     </tr>
                     <tr>
                         <td>Applicatiebeheer</td>
-                        <td>3</td>
+                        <td>2</td>
                     </tr>
                     <tr>
                         <td>Programmeren en databeheer</td>
-                        <td>1</td>
+                        <td>8</td>
                     </tr>
                     <tr>
                         <th class="hoofddingske">stage</th>
@@ -104,7 +121,9 @@
                 </table>
 
                 <table class="tabeleke2">
-                    <h1>6ADB</h1>
+                    <div class="headje2">
+                        <h1>6ADB</h1>
+                    </div>
                     <tr>
                         <th class="hoofddingske">vakken</th>
                         <th class="hoofddingske">aantal uur</th>
@@ -146,24 +165,28 @@
                         <td>1</td>
                     </tr>
                     <tr>
+                        <td>economie</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
                         <th class="hoofddingske">hoofdvakken</th>
                         <th class="hoofddingske">aantal uur</th>
                     </tr>
                     <tr>
                         <td>Webdesign</td>
-                        <td>1</td>
+                        <td>4</td>
                     </tr>
                     <tr>
                         <td>Computersystemen en netwerken</td>
-                        <td>2</td>
+                        <td>4</td>
                     </tr>
                     <tr>
                         <td>Applicatiebeheer</td>
-                        <td>3</td>
+                        <td>2</td>
                     </tr>
                     <tr>
                         <td>Programmeren en databeheer</td>
-                        <td>1</td>
+                        <td>8</td>
                     </tr>
                     <tr>
                         <th class="hoofddingske">stage</th>
@@ -177,7 +200,9 @@
                 </table>
             </div>
 
-                <h4 class="voorbeeldles">Dit is een voorbeeld van een lessenrooster die u zou kunnen krijgen in deze richting.</h4> 
+            <div class="voorbeeldles">
+                <h4>Dit is een voorbeeld van een lessenrooster die u zou kunnen krijgen in deze
+                    richting.</h4>
                 <table class="table2">
                     <tr>
                         <th class="hoofddingske">Lesuur</th>
@@ -261,13 +286,15 @@
                     </tr>
 
                 </table>
-                
-            </section>
-            <br>
-            
-        </main>
-        <footer class="footy">
-            <p>&copy;Microsite &HorizontalLine; GTI Beveren &CenterDot; 5ADB &CenterDot; 2026</p>
-        </footer>
-    </body>
+            </div>
+
+        </section>
+        <br>
+
+    </main>
+    <footer class="footy">
+        <p>&copy;Microsite &HorizontalLine; GTI Beveren &CenterDot; 5ADB &CenterDot; 2026</p>
+    </footer>
+</body>
+
 </html>

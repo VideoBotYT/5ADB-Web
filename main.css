@@ -10,6 +10,7 @@
 body {
     background-color: #000000;
     font-family: "Roboto Condensed";
+    color: white;
 }
 
 table {
@@ -61,7 +62,7 @@ td {
     font-size: 1.5rem;
 }
 
-.hero{
+.hero {
     background: url("assets/images/another\ held.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -70,7 +71,7 @@ td {
     background-position-y: 48%;
     /* background-position-x: auto; */
     text-align: center;
-    color:white;
+    color: white;
 }
 
 /* layout mainpage */
@@ -95,7 +96,8 @@ td {
     row-gap: 20px;
 
     background-color: rgba(0, 0, 0, 0.6);
-    box-shadow: rgba(0, 0, 0, 0.6) 10px 10px 10px;
+    /* box-shadow: rgba(0, 0, 0, 0.6) 10px 10px 10px; */
+    box-shadow: #ffffff7c 0px 0px 20px;
 }
 
 .main {
@@ -129,6 +131,7 @@ td {
     margin-top: 2rem;
 
     border-radius: 16px;
+    box-shadow: #ffffff7c 0px 0px 20px;
 }
 
 main {
@@ -170,18 +173,13 @@ main {
     /* text-align: center; */
     font-weight: bold;
     font-size: 1.2rem;
-
-    background-color: rgba(0, 0, 0, 0);
-
     justify-content: center;
-
     width: 15rem;
-
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-
     border-radius: 8px;
+    border-color: White;
 }
 
 .pro a,
@@ -216,7 +214,7 @@ main {
 }
 
 .footy {
-    margin-top: 34.3vh;
+    margin-top: 42vh;
     /* grid-area: foot;
     display: grid; */
 }
@@ -231,8 +229,8 @@ main {
 }
 
 .lesinfo {
-    color: rgb(246, 246, 246);
-    background-color: rgba(190, 190, 190, 0.491);
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: rgba(0, 0, 0, 0.6) 10px 10px 10px;
     border-radius: 10px;
     text-align: center;
     height: 200px;
@@ -240,7 +238,7 @@ main {
     width: 80%;
     margin: 2rem;
     padding-top: 2rem;
-    box-shadow: #000000 0px 10px 20px;
+    box-shadow: #e1e1e17c 0px 0px 20px;
     margin-left: 0px;
 }
 
@@ -257,12 +255,12 @@ main {
 }
 
 .Computergerichtevakken {
-    box-shadow: rgba(0, 0, 0, 0.2) 8px 10px 4px;
-    background-color: rgb(235, 234, 234);
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: rgba(0, 0, 0, 0.6) 10px 10px 10px;
     backdrop-filter: blur(20px);
-    color: black;
+    /* color: black; */
     border-radius: 15px;
-    border: solid 2px rgba(255, 255, 255, 0.55);
+    border: solid 2px rgba(255, 255, 255);
     padding: 1.5rem;
     margin: 1.5rem;
     margin-left: auto;
@@ -287,7 +285,7 @@ main {
     border: solid black;
     border-radius: 15px;
     height: 100%;
-    width: 45%;
+    width: 30%;
     margin: auto;
     margin-top: 2rem;
 }
@@ -300,7 +298,7 @@ main {
     border: solid black;
     border-radius: 15px;
     height: 100%;
-    width: 45%;
+    width: 30%;
     margin: auto;
     margin-top: 2rem;
 }
@@ -313,7 +311,7 @@ main {
     border: solid black;
     border-radius: 15px;
     height: 100%;
-    width: 45%;
+    width: 30%;
     margin: auto;
     margin-top: 2rem;
 }
@@ -326,7 +324,7 @@ main {
     border: solid black;
     border-radius: 15px;
     height: 100%;
-    width: 45%;
+    width: 30%;
     margin: auto;
     margin-top: 2rem;
 }
@@ -339,7 +337,7 @@ main {
     border: solid black;
     border-radius: 15px;
     height: 100%;
-    width: 45%;
+    width: 30%;
     margin: auto;
     margin-top: 2rem;
 }
@@ -376,42 +374,42 @@ main {
 
 .Applicatiebeheer {
     border-radius: 15px;
-    border: solid black;
+    border: solid white;
     padding: 1.5rem;
     margin: 0.5rem;
 }
 
 .computersystemen {
     border-radius: 15px;
-    border: solid black;
+    border: solid white;
     padding: 1.5rem;
     margin: 0.5rem;
 }
 
 .programmeren {
     border-radius: 15px;
-    border: solid black;
+    border: solid white;
     padding: 1.5rem;
     margin: 0.5rem;
 }
 
 .Webdesign {
     border-radius: 15px;
-    border: solid black;
+    border: solid white;
     padding: 1.5rem;
     margin: 0.5rem;
 }
 
 .Form {
-    background-color: rgba(0, 0, 0, 0.114);
     border-radius: 12px;
     width: 50%;
     margin: auto;
     margin-top: 5%;
     margin-bottom: 5%;
     padding: 2%;
-
-    box-shadow: rgba(0, 0, 0, 0.6) 10px 10px 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: #ffffff7c 0px 0px 20px;
+    backdrop-filter: blur(8px);
 }
 
 .Form p {
@@ -453,6 +451,7 @@ input {
     border-radius: 8px;
     border: 1px solid;
     padding: 1%;
+    width: 300px;
 }
 
 label {
@@ -478,50 +477,114 @@ footer {
     color: white;
 }
 
-.BackgroundForm {
-    background-color: rgb(101, 96, 158);
-}
-
-.lessenvakken {
-    background-color: #908e8e;
-}
-
 .voorbeeldles {
     text-align: center;
+    color: black;
+    font-size: large;
+    padding: 20px;
+    border-radius: 16px;
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: #ffffff7c 0px 0px 20px;
 }
-
-.computer {
-    background-color: #908e8e;
+.voorbeeldles h4{
+    color: #ecf0f1;
 }
 
 .TabelForm {
     background-color: rgba(0, 0, 0, 0);
     border: none;
 }
-.basisvorming
-{
-    margin: 50px;
+
+.basisvorming {
+    margin: auto;
+    margin-top: 30px;
+    color: black;
+    /* margin-left:100px; */
 }
 
-.table2
-{
-    margin: 20px;
-}
 .Form td {
     text-align: center;
     display: inline;
 }
 
-.tabeleke1
-{
-    display: inline;
-}
-.tabeleke2
-{
-    display: inline;
+.tabeleke1 {
+    grid-area: tablek;
+    color: black;
 }
 
-.hoofddingske
-{
-    background-color: rgba(4, 4, 61, 0.724);
+.tabeleke2 {
+    grid-area: table2;
+    color: black;
+}
+
+.headje {
+    grid-area: head;
+    color: #ecf0f1;
+
+    margin: auto;
+}
+
+.headje2 {
+    grid-area: head2;
+    color: #ecf0f1;
+
+    margin: auto;
+}
+
+.flexyTable {
+    display: grid;
+    /* width: 80%; */
+    grid-template-areas:
+        "head head2"
+        "tablek table2";
+
+    margin: auto;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+
+    padding: 2%;
+
+    border-radius: 16px;
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: #ffffff7c 0px 0px 20px;
+}
+
+.hoofddingske {
+    background-color: rgba(4, 4, 61, 0.775);
+}
+
+.mainrooster {
+    /* width: 80%; */
+    margin: auto;
+}
+
+.watna {
+    background-color: rgba(0, 0, 0, 0.114);
+    border-radius: 12px;
+    width: 50%;
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    padding: 2%;
+
+    box-shadow: #ffffff7c 0px 0px 20px;
+
+    backdrop-filter: blur(8px);
+
+    text-align: center;
+}
+
+.watna h1, .watna p{
+    margin-bottom: 2%;
+}
+
+.watna ul, .watna li{
+    text-align: left;
+    margin: auto;
+    line-height: 1.45rem;
+}
+
+.watna a{
+    color: white;
+    font-weight: bold;
 }
