@@ -34,9 +34,25 @@ th {
 td {
     background-color: #ecf0f1;
 }
-
+.herosec{
+    
+    background-image: url(assets/images/hero-foto.png);
+    background-size: cover;
+    height: 80rem;
+    width: 100%;
+    
+}
+.achterblue
+{
+   background-color:rgb(21, 21, 150); 
+   
+   margin: 20px;
+   padding: 7px;
+   border-radius: 20px;
+}
 /* topbar aanmaken */
 .topbar {
+    display: flex;
     background: rgba(0, 0, 0, 0.5);
     width: 80%;
     /* height: 10%; */
@@ -48,6 +64,8 @@ td {
 
     border-radius: 16px;
     box-shadow: rgba(0, 0, 0, 0.2) 8px 10px 4px;
+
+    justify-content: center;
 }
 
 .button {
@@ -55,11 +73,19 @@ td {
     text-decoration: none;
     color: white;
     margin: auto;
-    margin: 5%;
+    margin: 2%;
     padding: 8px;
     border-radius: 8px;
 
     font-size: 1.5rem;
+
+    transition: transform 250ms ease-in-out;
+
+    animation: start 1s ease-out;
+    
+    &:hover {
+        transform: scale(1.1, 1.1);
+    }
 }
 
 .hero {
@@ -180,6 +206,14 @@ main {
     margin-right: auto;
     border-radius: 8px;
     border-color: White;
+
+    transition: transform 250ms ease-in-out;
+
+    animation: start 1.2s ease-out;
+
+    &:hover {
+        transform: translateY(-10px);
+    }
 }
 
 .pro a,
@@ -192,23 +226,51 @@ main {
     color: white;
 }
 
-
+.Knoppro
+{
+    background-color: rgb(0, 0, 0);
+    border-radius: 15px;
+   padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    margin: 1.5rem;
+    text-align: center;
+    align-content: center;
+    
+}
 .pro {
     grid-area: pro;
-    background-image: url("assets/images/cybercrime.jpg");
+    background-image: url("assets/images/programere foto.png");
+    height: 30rem;
+    width: 20rem;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .cs {
     grid-area: cs;
-    background-image: url("assets/images/touchdashish.jpg");
+    background-image: url("assets/images/Applicatiebeheer.jpeg");
+    height: 30rem;
+    width: 20rem;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .web {
+    height: 30rem;
+    width: 20rem;
+    background-repeat: no-repeat;
+    background-size: cover;
     grid-area: web;
     background-image: url("assets/images/AI\ Image.png");
 }
 
 .applicatiebeheer {
+    height: 30rem;
+    width: 20rem;
+    background-repeat: no-repeat;
+    background-size: cover;
     grid-area: slaap;
     background-image: url("assets/images/app.jpg");
 }
@@ -344,31 +406,31 @@ main {
 
 .Fotoprogrammeren img {
     flex-shrink: 1;
-    width: 500px;
+    width: 100%;
     object-fit: cover;
 }
 
 .Fotocomputersystemen img {
     flex-shrink: 1;
-    width: 500px;
+    width: 100%;
     object-fit: cover;
 }
 
 .Fotowebdesign img {
     flex-shrink: 1;
-    width: 500px;
+    width: 100%;
     object-fit: cover;
 }
 
 .FotoApplicatiebeheer img {
     flex-shrink: 1;
-    width: 500px;
+    width: 100%;
     object-fit: cover;
 }
 
 .FotoApplicatiebeheer2 img {
     flex-shrink: 1;
-    width: 500px;
+    width: 100%;
     object-fit: cover;
 }
 
@@ -410,11 +472,12 @@ main {
     background-color: rgba(0, 0, 0, 0.6);
     box-shadow: #ffffff7c 0px 0px 20px;
     backdrop-filter: blur(8px);
+    font-size: 2.5rem;
 }
 
-.Form p {
-    margin-bottom: 5%;
-}
+/* .Form p {
+    margin-bottom: 2%;
+} */
 
 select {
     margin: 2%;
@@ -432,6 +495,7 @@ fieldset {
     color: white;
     padding: 2%;
     border-radius: 12px;
+    margin-right: 5%;
 }
 
 .reset {
@@ -486,7 +550,8 @@ footer {
     background-color: rgba(0, 0, 0, 0.6);
     box-shadow: #ffffff7c 0px 0px 20px;
 }
-.voorbeeldles h4{
+
+.voorbeeldles h4 {
     color: #ecf0f1;
 }
 
@@ -574,17 +639,59 @@ footer {
     text-align: center;
 }
 
-.watna h1, .watna p{
+.watna h1,
+.watna p {
     margin-bottom: 2%;
 }
 
-.watna ul, .watna li{
+.watna ul,
+.watna li {
     text-align: left;
     margin: auto;
     line-height: 1.45rem;
 }
 
-.watna a{
+.watna a {
     color: white;
     font-weight: bold;
+}
+
+@keyframes start {
+    from {
+        opacity: 0;
+        transform: translateY(2vh);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (min-width: 360px) and (max-width: 480px) {
+    .topbar{
+        display: none;
+    }
+}
+
+@media (min-width: 360px){
+    .maingrid{
+        overflow-x: scroll;
+    }
+}
+
+@media (min-width: 1280px) {
+    .maingrid{
+        overflow-x: visible;
+    }
+}
+
+@media (max-width: 1280px) {
+    .topbar{
+        flex-direction: column;
+        gap: 0.1rem;
+
+        .button{
+            margin: 0;
+        }
+    }
 }
