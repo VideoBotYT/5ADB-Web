@@ -34,22 +34,45 @@ th {
 td {
     background-color: #ecf0f1;
 }
-.herosec{
-    
+
+.herosec {
+
     background-image: url(assets/images/hero-foto.png);
     background-size: cover;
-    height: 80rem;
+    height: 50rem;
     width: 100%;
-    
 }
-.achterblue
-{
-   background-color:rgb(21, 21, 150); 
-   
-   margin: 20px;
-   padding: 7px;
-   border-radius: 20px;
+.texts{
+    margin: 20px;
 }
+.hometabel {
+    background-color: #000000;
+}
+.textje {
+    margin-top: 100px;
+    margin: 20px;
+    font-size: 4rem;
+}
+
+.blauwtje {
+    color: rgb(5, 5, 206);
+
+}
+
+.homeico {
+    margin-top: 35rem;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.24);
+}
+
+.achterblue {
+    background-color: rgb(21, 21, 150);
+    margin-top: 40px;
+    margin: 40px;
+    padding: 7px;
+    border-radius: 20px;
+}
+
 /* topbar aanmaken */
 .topbar {
     display: flex;
@@ -82,7 +105,7 @@ td {
     transition: transform 250ms ease-in-out;
 
     animation: start 1s ease-out;
-    
+
     &:hover {
         transform: scale(1.1, 1.1);
     }
@@ -107,19 +130,18 @@ td {
         "pro web cs slaap";
 
     display: grid;
-
     grid-template-rows: 2fr 5fr;
 
     padding: 2%;
     padding-bottom: 6%;
     border-radius: 16px;
 
-    width: 80%;
-    margin: auto;
-    margin-top: 2%;
-
     gap: 10px;
     row-gap: 20px;
+
+    width: 90%;
+    margin: auto;
+    margin-top: 2%;
 
     background-color: rgba(0, 0, 0, 0.6);
     /* box-shadow: rgba(0, 0, 0, 0.6) 10px 10px 10px; */
@@ -197,10 +219,14 @@ main {
 .applicatiebeheer {
     display: grid;
     /* text-align: center; */
+
+    height: 30rem;
+    width: 20rem;
+
     font-weight: bold;
     font-size: 1.2rem;
     justify-content: center;
-    width: 15rem;
+    /* width: 15rem; */
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -226,24 +252,22 @@ main {
     color: white;
 }
 
-.Knoppro
-{
-    background-color: rgb(0, 0, 0);
+.Knoppro {
     border-radius: 15px;
-   padding-bottom: 0.5rem;
-    padding-top: 0.5rem;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    margin: 1.5rem;
+    padding: 0.5rem;
     text-align: center;
     align-content: center;
-    
-}
-.pro {
-    grid-area: pro;
-    background-image: url("assets/images/programere foto.png");
+    background-color: rgba(0, 0, 0, 0.315);
     height: 30rem;
     width: 20rem;
+    margin: auto;
+}
+
+.pro {
+    grid-area: pro;
+    background-image: url("assets/images/programmeren.png");
+    /* height: 30rem; */
+    /* width: 20rem; */
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -251,28 +275,28 @@ main {
 .cs {
     grid-area: cs;
     background-image: url("assets/images/Applicatiebeheer.jpeg");
-    height: 30rem;
-    width: 20rem;
+    /* height: 30rem; */
+    /* width: 20rem; */
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .web {
-    height: 30rem;
-    width: 20rem;
+    grid-area: web;
+    /* height: 30rem; */
+    /* width: 20rem; */
     background-repeat: no-repeat;
     background-size: cover;
-    grid-area: web;
-    background-image: url("assets/images/AI\ Image.png");
+    background-image: url("assets/images/Webdesign.png");
 }
 
 .applicatiebeheer {
-    height: 30rem;
-    width: 20rem;
+    grid-area: slaap;
+    /* height: 30rem; */
+    /* width: 20rem; */
     background-repeat: no-repeat;
     background-size: cover;
-    grid-area: slaap;
-    background-image: url("assets/images/app.jpg");
+    background-image: url("assets/images/Applicatiebeheer.png");
 }
 
 .footy {
@@ -341,6 +365,7 @@ main {
 
 .FotoApplicatiebeheer {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     overflow: hidden;
@@ -472,7 +497,7 @@ main {
     background-color: rgba(0, 0, 0, 0.6);
     box-shadow: #ffffff7c 0px 0px 20px;
     backdrop-filter: blur(8px);
-    font-size: 2.5rem;
+    /* font-size: 2.5rem; */
 }
 
 /* .Form p {
@@ -484,9 +509,9 @@ select {
 }
 
 fieldset {
-    padding-left: 2%;
     margin-bottom: 5%;
     border-radius: 12px;
+    text-align: center;
 }
 
 .submit {
@@ -515,7 +540,8 @@ input {
     border-radius: 8px;
     border: 1px solid;
     padding: 1%;
-    width: 300px;
+    width: 200px;
+    background-color: #ffffff00;
 }
 
 label {
@@ -560,6 +586,10 @@ footer {
     border: none;
 }
 
+.TabelForm input {
+    background-color: white;
+}
+
 .basisvorming {
     margin: auto;
     margin-top: 30px;
@@ -568,8 +598,8 @@ footer {
 }
 
 .Form td {
-    text-align: center;
-    display: inline;
+    text-align: left;
+    /* display: inline; */
 }
 
 .tabeleke1 {
@@ -661,6 +691,7 @@ footer {
         opacity: 0;
         transform: translateY(2vh);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -668,30 +699,45 @@ footer {
 }
 
 @media (min-width: 360px) and (max-width: 480px) {
-    .topbar{
-        display: none;
+    .topbar {
+        top: 10px;
+        flex-direction: column;
+        gap: 0.1rem;
+
+        .button {
+            margin: 0;
+        }
     }
 }
 
-@media (min-width: 360px){
-    .maingrid{
+@media (min-width: 360px) {
+    .maingrid {
         overflow-x: scroll;
     }
 }
 
 @media (min-width: 1280px) {
-    .maingrid{
+    .maingrid {
         overflow-x: visible;
     }
 }
 
 @media (max-width: 1280px) {
-    .topbar{
-        flex-direction: column;
-        gap: 0.1rem;
+    .topbar {
+        font-size: 0.95rem;
+    }
 
-        .button{
-            margin: 0;
+    .button {
+        font-size: 0.95rem;
+
+        span {
+            font-size: 0.95rem;
         }
+    }
+}
+
+@media (min-width: 1400px) {
+    .topbar {
+        flex-direction: row;
     }
 }
