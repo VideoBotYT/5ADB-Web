@@ -42,12 +42,15 @@ td {
     height: 50rem;
     width: 100%;
 }
-.texts{
+
+.texts {
     margin: 20px;
 }
+
 .hometabel {
     background-color: #000000;
 }
+
 .textje {
     margin-top: 100px;
     margin: 20px;
@@ -131,6 +134,8 @@ td {
 
     display: grid;
     grid-template-rows: 2fr 5fr;
+
+    justify-content: center;
 
     padding: 2%;
     padding-bottom: 6%;
@@ -363,9 +368,16 @@ main {
     text-align: center;
 }
 
-.FotoApplicatiebeheer {
+.APPFotos {
     display: flex;
     flex-direction: row;
+
+    justify-content: center;
+}
+
+.FotoApplicatiebeheer {
+    display: flex;
+    /* flex-direction: row; */
     justify-content: center;
     align-items: center;
     overflow: hidden;
@@ -590,6 +602,10 @@ footer {
     background-color: white;
 }
 
+.Info {
+    padding-bottom: 6px;
+}
+
 .basisvorming {
     margin: auto;
     margin-top: 30px;
@@ -698,7 +714,8 @@ footer {
     }
 }
 
-@media (min-width: 360px) and (max-width: 480px) {
+@media (max-width: 360px),
+(min-width: 360px) and (max-width: 480px) {
     .topbar {
         top: 10px;
         flex-direction: column;
@@ -716,11 +733,17 @@ footer {
     }
 }
 
-@media (min-width: 1280px) {
+@media (max-width: 860px) {
+    .TabelForm input {
+        width: 100%;
+    }
+}
+
+/* @media (min-width: 1280px) {
     .maingrid {
         overflow-x: visible;
     }
-}
+} */
 
 @media (max-width: 1280px) {
     .topbar {
@@ -739,5 +762,11 @@ footer {
 @media (min-width: 1400px) {
     .topbar {
         flex-direction: row;
+    }
+}
+
+@media (min-width: 1500px) {
+    .maingrid {
+        overflow-x: visible;
     }
 }
